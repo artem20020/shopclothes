@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* Page */
+.page {
+    overflow: hidden;
+}
+.container {
+    width: 100%;    
+}
+
+/* Header */
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+   
+ 
+    text-align: center;
+
+}
+.header__logo {
+    padding-top: 119px;
+}
+
+/* Intro */
+.intro {
+    padding-top: 440px;
+
+    position: relative;
+    min-width: 1600px;
+    min-height: 3000px;
+    
+    text-align: center;
+
+    background: url(../image/intro.jpg) center no-repeat;
+    background-size: cover;
+    
+}
+
+.intro__title {
+    font-size: 100px;
+    font-weight: 700;
+}
+.intro__suptitle {
+    font-size: 180px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 10px;
+    color: #5e3720;
+}
+.intro__girl {
+    width: 870px;
+    height: 1470px;
+
+    background: linear-gradient(to bottom, #f3f3f3, #eaeaea);
+    padding: 48px;
+    box-shadow: 0 10px 25px ; 
+}
+.intro__text {
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 370px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+/* Button */
+.button  {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 40px 75px;
+    background-color: #000000;
+    width: 455px;
+    height: 111px;
+}
+.button:hover {
+    background-color: #00000088;
+}
+
+/* Buy */
+.buy {
+    text-align: center;
+    padding: 200px 0;
+}
+.buy__title {
+    font-size: 70px;
+    font-weight: 700;
+}
+.buy__suptitle {
+    font-size: 70px;
+    font-weight: lighter;
+}
+.buy__text {
+    font-size: 36px;
+    margin: 0 450px;
+}
+.buy__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 50px;
+    margin-top: 100px;
+}
+.buy__card {
+    width: 33%;
+}
+
+/* Card */
+.card__img {
+    height: 640px;
+    width: 427px;
+}
+.card__text {
+    font-size: 30px;
+    color: #665e56;
+    padding: 60px 0;
+    
+}
+.card__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.card__btn {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+.btn__icon {
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+/* Photo */
+.photo__logo {
+    display: block;
+    margin: 0 auto;
+}
+.photo__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 0;
+}
+
+
+/* Nav */
+.footer {
+    text-align: center;
+}
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 700;
+    color: #000000;
+    border-right: 2px solid #000000;
+    padding: 0 30px;
+}
+.nav__link:last-child {
+    border-right: none;
+}
+.copyright {
+    color: #979c9f;
+    font-size: 27px;
+    padding-bottom: 70px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .intro {
+        padding-top: 350px;
+        min-width: 600px;
+        min-height: 1900px;
+    }
+    .intro__title {
+        font-size: 70px;
+    }
+    .intro__suptitle {
+        font-size: 85px;
+    }
+    .intro__girl {
+        width: 435px;
+        height: 735px;
+        padding: 20px;
+    }
+    .intro__text {
+        font-size: 30px;
+        margin: 0 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .button {
+        font-size: 20px;
+    }
+    .buy__title {
+        font-size: 65px;
+    }
+    .buy__suptitle {
+        font-size: 60px;
+    }
+    .buy__text {
+        font-size: 30px;
+        margin: 0 50px;
+    }
+    .buy__card {
+        width: 100%;
+    }
+    .card__text {
+        font-size: 25px;
+        padding: 25px 0;
+    }
+    .card__button {
+        margin-bottom: 50px;
+    }
+    .photo__item {
+        padding: 65px 18px;
+    }
+    .photo__girl {
+        width: 50%;
+    }
+    .copyright {
+        margin: 20px 50px;
+    }
+}
